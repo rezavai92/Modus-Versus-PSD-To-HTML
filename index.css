@@ -78,10 +78,7 @@ padding: 0px;
     margin-left: 10%;
     margin-right: 10%;
 }
-.section2 .container{
-   
-    
-}
+
 .section2 .container .jumbotron{
     padding: 1rem;
     position: relative !important;
@@ -127,6 +124,14 @@ padding: 0px;
     .section3-flex{
         flex-wrap: wrap;
     }
+    .cover .text1{
+        left: 25%;
+        width: 55%;
+        
+    }
+    .cover .text2{
+        width: 40%;
+    }
 }
 .why-modus{
     position: relative;
@@ -157,12 +162,11 @@ padding: 0px;
     
     
 }
-.inner-card , .outer-card {
-    border: 3px solid black;
-    border-radius: 4%;
-}
+
 .inner-card img{
     height: 40vh;
+    border-radius: 2%;
+    border: 1px solid silver;
 }
 .outer-card {
     width: 50%;
@@ -174,6 +178,8 @@ padding: 0px;
 .outer-card img{
     
     height: 44vh;
+    border-radius: 2%;
+    border: 1px solid silver
 
 }
 @media screen and (max-width:580px){
@@ -191,7 +197,7 @@ padding: 0px;
     display: flex;
     width: 100%;
     flex-direction: row;
-    
+    text-align: center;
     justify-content: space-evenly;
     margin-top: 5%;
     margin-left: 10%;
@@ -249,8 +255,8 @@ padding: 0px;
 .hr{
     position: absolute;
     top: 0%;
-    left: 15%;
-    width: 80%;
+    left: 17%;
+    width: 100%;
 }
 .section5-flex{
     display: flex;
@@ -281,8 +287,9 @@ height: 110px;
     color: white;
     display : flex;
     flex-direction: row;
-    justify-content: flex-start;
-    overflow: scroll;
+    justify-content: space-around;
+    
+    text-align: center;
     
 }
 .footer div{
@@ -300,3 +307,26 @@ height: 110px;
 .social-media i {
     margin: 5%;
 }
+.footer ul,li{
+
+    list-style-type: none;
+    padding:0px;
+    margin: opx;
+}
+
+@media screen and (max-width:580px){
+
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    
+}
+.progressbar{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+
+}
+

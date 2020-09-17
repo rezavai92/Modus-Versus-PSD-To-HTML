@@ -192,26 +192,26 @@
                   <div class="section4-flex">
                     <div>
                       <h5>Why choose us?</h5>
-                      <ul>
+                      <ul style="line-height: 2em;">
                         <li>
                          
-                          
+                          <i class="fas fa-arrow-right" style="color: #f52b07;" ></i> 
                           Lorem ipsum dolor sit amet.
                         </li>
                         <li>
-                      
+                          <i class="fas fa-arrow-right" style="color: #f52b07;"></i>
                           Lorem ipsum dolor sit amet.
                         </li>
                         <li>
-                    
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. In, assumenda.
+                          <i class="fas fa-arrow-right" style="color: #f52b07;"></i>
+                         Lorem ipsum dolor sit amet consectetur adipisicing..
                         </li>
                         <li>
-                          <i class="fas fa-arrow-right"></i>
+                          <i class="fas fa-arrow-right" style="color: #f52b07;"></i>
                           Lorem ipsum dolor sit amet.
                         </li>
                         <li>
-                          <i class="fas fa-arrow-right"></i>
+                          <i class="fas fa-arrow-right" style="color: #f52b07;"></i>
                           Lorem ipsum dolor sit amet.
                         </li>
                        
@@ -219,10 +219,26 @@
                       </ul>
                     </div>
                     <div>
+                      <h5>progress curve</h5>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, dicta.
                       </p>
+
+
+
+                        
+
+                        <div class="progressbar">
+                       
+                          <div id="container1"></div>
+                          <div id="container2"></div>
+                          <div id="container3"></div>
+                          <div id="prog-container"> </div>
+                       
+                      
+                        </div>
                     </div>
+
                     <div>
                       <h5>What clients say?</h5>
                       <div class="client-container">
@@ -279,10 +295,10 @@
 
           <footer>
             <div class="footer">
-              <div class="item1">
-                <h3>
-
-                </h3>
+              <div  class="item1">
+                <h4 >
+                  MODUS<span style="font-variant-caps: small-caps;" >versus</span>
+                </h4>
                 <ul>
                   <li>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, quia.
@@ -316,7 +332,7 @@
               </div>
               <div class="item3">
                 <h6>
-                  Company
+                  Community
                 </h6>
                 <ul>
                   <li>
@@ -342,7 +358,151 @@
               </div>
             </div>
           </footer>
+
+         
           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.1.0/progressbar.min.js" integrity="sha512-EZhmSl/hiKyEHklogkakFnSYa5mWsLmTC4ZfvVzhqYNLPbXKAXsjUYRf2O9OlzQN33H0xBVfGSEIUeqt9astHQ==" crossorigin="anonymous"></script>
+          <script>
+ // progressbar.js@1.0.0 version is used
+// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+// progressbar.js@1.0.0 version is used
+// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+// progressbar.js@1.0.0 version is used
+// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+// progressbar.js@1.0.0 version is used
+// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+
+var bar = new ProgressBar.SemiCircle('#container1', {
+  strokeWidth: 6,
+  color: '#FFEA82',
+  trailColor: '#1dc4a9',
+  trailWidth: 6,
+  easing: 'easeInOut',
+  duration: 1400,
+  svgStyle: null,
+  text: {
+    value: '',
+    alignToBottom: false
+  },
+  from: {color: '#FFEA82'},
+  to: {color: '#ED6A5A'},
+  // Set default step function for all animate calls
+  step: (state, bar) => {
+    bar.path.setAttribute('stroke', state.color);
+    var value = Math.round(bar.value() * 100);
+    if (value === 0) {
+      bar.setText('');
+    } else {
+      bar.setText(value);
+    }
+
+    bar.text.style.color = state.color;
+  }
+});
+bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+bar.text.style.fontSize = '2rem';
+
+bar.animate(0.8);  // Number from 0.0 to 1.0
+var bar = new ProgressBar.SemiCircle('#container2', {
+  strokeWidth: 6,
+  color: '#FFEA82',
+  trailColor: '#1dc4a9',
+  trailWidth: 6,
+  easing: 'easeInOut',
+  duration: 1400,
+  svgStyle: null,
+  text: {
+    value: '',
+    alignToBottom: false
+  },
+  from: {color: '#FFEA82'},
+  to: {color: '#ED6A5A'},
+  // Set default step function for all animate calls
+  step: (state, bar) => {
+    bar.path.setAttribute('stroke', state.color);
+    var value = Math.round(bar.value() * 100);
+    if (value === 0) {
+      bar.setText('');
+    } else {
+      bar.setText(value);
+    }
+
+    bar.text.style.color = state.color;
+  }
+});
+bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+bar.text.style.fontSize = '2rem';
+
+bar.animate(0.6);  // Number from 0.0 to 1.0
+var bar = new ProgressBar.SemiCircle('#container3', {
+  strokeWidth: 6,
+  color: '#FFEA82',
+  trailColor: '#1dc4a9',
+  trailWidth: 6,
+  easing: 'easeInOut',
+  duration: 1400,
+  svgStyle: null,
+  text: {
+    value: '',
+    alignToBottom: false
+  },
+  from: {color: '#FFEA82'},
+  to: {color: '#ED6A5A'},
+  // Set default step function for all animate calls
+  step: (state, bar) => {
+    bar.path.setAttribute('stroke', state.color);
+    var value = Math.round(bar.value() * 100);
+    if (value === 0) {
+      bar.setText('');
+    } else {
+      bar.setText(value);
+    }
+
+    bar.text.style.color = state.color;
+  }
+});
+
+bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+bar.text.style.fontSize = '2rem';
+
+bar.animate(1.0);  // Number from 0.0 to 1.0
+
+
+
+
+var bar = new ProgressBar.SemiCircle('#prog-container', {
+  strokeWidth: 6,
+  color: '#FFEA82',
+  trailColor: '#1dc4a9',
+  trailWidth: 6,
+  easing: 'easeInOut',
+  duration: 1400,
+  svgStyle: null,
+  text: {
+    value: '',
+    alignToBottom: false
+  },
+  from: {color: '#FFEA82'},
+  to: {color: '#ED6A5A'},
+  // Set default step function for all animate calls
+  step: (state, bar) => {
+    bar.path.setAttribute('stroke', state.color);
+    var value = Math.round(bar.value() * 100);
+    if (value === 0) {
+      bar.setText('');
+    } else {
+      bar.setText(value);
+    }
+
+    bar.text.style.color = state.color;
+  }
+});
+bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+bar.text.style.fontSize = '2rem';
+
+bar.animate(0.7);  // Number from 0.0 to 1.0  // Number from 0.0 to 1.0
+          </script>
+        
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
